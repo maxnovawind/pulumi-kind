@@ -74,4 +74,4 @@ jobs:
         language:
           - nodejs
         nodeversion:
-          - 14.x
+          - 18.x
