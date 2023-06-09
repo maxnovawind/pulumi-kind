@@ -64,8 +64,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: publish_binary
     steps:
-    - name: refresh tags for avoiding ci-bugs
-      run: git fetch --tags -f
     - name: Publish SDKs
       uses: pulumi/pulumi-package-publisher@v0.0.6
     strategy:
