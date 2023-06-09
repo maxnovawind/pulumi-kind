@@ -6,7 +6,6 @@ before:
     - make tfgen
 builds:
   - binary: pulumi-resource-kind
-    dir: provider
     env:
       - CGO_ENABLED=0
     goarch:
