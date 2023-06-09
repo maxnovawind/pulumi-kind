@@ -6,6 +6,7 @@ before:
     - make tfgen
 builds:
   - binary: pulumi-resource-kind
+    dir: provider
     env:
       - CGO_ENABLED=0
     goarch:
@@ -18,7 +19,7 @@ builds:
     ldflags:
       # The line below MUST align with the module in current provider/go.mod
       - -X github.com/maxnovawind/pulumi-kind/provider/pkg/version.Version={{.Tag }}
-    main: ./provider/cmd/pulumi-resource-kind/
+    main: ./cmd/pulumi-resource-kind/
 changelog:
   skip: true
 release:
