@@ -1,5 +1,5 @@
 {
-    "name": "@starton/kind",
+    "name": "@maxnovawindunix/kind",
     "version": "${VERSION}",
     "description": "A Pulumi package for creating and managing kind cloud resources.",
     "keywords": [
@@ -25,6 +25,6 @@
     "pulumi": {
         "resource": true,
         "name": "kind",
-        "server": "https://github.com/maxnovawind/pulumi-kind/releases/download/v${VERSION}"
+        "server": "github://api.github.com/maxnovawind"
     }
 }
