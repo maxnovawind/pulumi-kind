@@ -24,6 +24,7 @@
     },
     "pulumi": {
         "resource": true,
-        "name": "kind"
+        "name": "kind",
+        "server": "https://github.com/maxnovawind/pulumi-kind/releases/download/v${VERSION}"
     }
 }
